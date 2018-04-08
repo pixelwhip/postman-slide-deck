@@ -1,0 +1,6883 @@
+{
+	"info": {
+		"name": "05 - Contenta JSON API - JSON API",
+		"_postman_id": "16733116-d0f3-40cb-962e-cf9ce47cede3",
+		"description": "This is a JSON API compliant implemenation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"description": "Folder for api",
+			"item": [
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The node object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/articles/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"articles",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/blocks/:block/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"blocks",
+								":block",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "block",
+									"value": "{{block}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The taxonomy_term object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/categories/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"categories",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The comment object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/comments/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"comments",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/commentTypes/:comment_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"commentTypes",
+								":comment_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment_type",
+									"value": "{{comment_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The consumer object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/consumer/consumer/:consumer/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"consumer",
+								"consumer",
+								":consumer",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "consumer",
+									"value": "{{consumer}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/contentTypes/:node_type/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"contentTypes",
+								":node_type",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node_type",
+									"value": "{{node_type}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The file object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/files/:file/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"files",
+								":file",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "file",
+									"value": "{{file}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/graphql_query_map/graphql_query_map/:graphql_query_map/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"graphql_query_map",
+								"graphql_query_map",
+								":graphql_query_map",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "graphql_query_map",
+									"value": "{{graphql_query_map}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The media object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/images/:media/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"images",
+								":media",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media",
+									"value": "{{media}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/imageStyles/:image_style/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"imageStyles",
+								":image_style",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "image_style",
+									"value": "{{image_style}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/mediaBundles/:media_bundle/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"mediaBundles",
+								":media_bundle",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "media_bundle",
+									"value": "{{media_bundle}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The menu_link_content object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menuLinks/:menu_link_content/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menuLinks",
+								":menu_link_content",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu_link_content",
+									"value": "{{menu_link_content}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/menus/:menu/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"menus",
+								":menu",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "menu",
+									"value": "{{menu}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The node object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/node/tutorial/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"node",
+								"tutorial",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The node object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/pages/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"pages",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The node object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/recipes/:node/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"recipes",
+								":node",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "node",
+									"value": "{{node}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The comment object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/reviews/:comment/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"reviews",
+								":comment",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "comment",
+									"value": "{{comment}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/roles/:user_role/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"roles",
+								":user_role",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user_role",
+									"value": "{{user_role}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The taxonomy_term object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/tags/:taxonomy_term/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"tags",
+								":taxonomy_term",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_term",
+									"value": "{{taxonomy_term}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "The user object"
+						},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/users/:user/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"users",
+								":user",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies?filter={{filter}}&sort={{sort}}&page={{page}}",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{{filter}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "page",
+									"value": "{{page}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "collection post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies"
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "individual delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "related get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				},
+				{
+					"name": "relationship delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://contenta.test/jsonapi/api/vocabularies/:taxonomy_vocabulary/relationships/:related",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"jsonapi",
+								"api",
+								"vocabularies",
+								":taxonomy_vocabulary",
+								"relationships",
+								":related"
+							],
+							"variable": [
+								{
+									"key": "taxonomy_vocabulary",
+									"value": "{{taxonomy_vocabulary}}"
+								}
+							]
+						},
+						"description": "@todo Add descriptions"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

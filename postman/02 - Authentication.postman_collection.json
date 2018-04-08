@@ -1,0 +1,1632 @@
+{
+	"info": {
+		"name": "02 - Authentication",
+		"_postman_id": "742ceb08-b68b-4a8b-ad9a-5ec7e10e5506",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Oauth Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "gYiKPzr=29VQ^4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "363RsMbXx=jBK)",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "content_administrator",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://contenta.test/oauth/token",
+					"protocol": "http",
+					"host": [
+						"contenta",
+						"test"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "6cf68218-d147-414c-98af-bf870007c6aa",
+					"name": "200: OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "gYiKPzr=29VQ^4",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "363RsMbXx=jBK)",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://contenta.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 16:56:51 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache",
+							"name": "pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [],
+					"body": "{\"token_type\":\"Bearer\",\"expires_in\":300,\"access_token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQxMTExY2Y1NTVjYTNkMzcwMGRiM2Y5NjVhYTUzZTk0N2I2ZjRmNmUwNjhmZDkwMjg4NjE1ZDcwY2UxZDk4NGNjOGE2YTVjNzk5OTViNGNjIn0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiJkMTExMWNmNTU1Y2EzZDM3MDBkYjNmOTY1YWE1M2U5NDdiNmY0ZjZlMDY4ZmQ5MDI4ODYxNWQ3MGNlMWQ5ODRjYzhhNmE1Yzc5OTk1YjRjYyIsImlhdCI6MTUyMzIwNjYxMCwibmJmIjoxNTIzMjA2NjEwLCJleHAiOjE1MjMyMDY5MTAsInN1YiI6IjEiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.DQUMTOMD030fsxdr_W_Sk5tC0oqA7KI7C-inZ3M9wBaT8FBNQrsRMR5KeJOWsUdStAGhk0Vawyq0MTyWlHuiSkjfO5sgf02G4G5MYDtIFsC1zIlJAS55-s-3bNuw7jrfoa7w_7IjXEqnHNv5m4f7H49e3nQ9rsfPvclUzhQ78IHwwQ13UdgyiraiBLm_7PTqhkCpicuyIwiie0dObsyOaNeTjxQl1GBTqCL9Y3mNcM_R0qFb3_dwW6Iw_EEL_k8Z25xFwkKJY8BWmKMzL0vr-l1gETigEUeky9usCLaE8C7pDt1lCCZ07FXzmSqLFmieI-Zsg3J3nfU2P18-g_ph6-rTrkNhEIo5W3oyHUIZuax3t4OG5r6yKX3Adu6AGmP0YTPhY1bFgx35jMPaPEQYMsqbWybmesC8ztarbMkcxd4jAAwI407TFhzOz9Khnv3yb0wAPHjElwA6yCcSeQIklLsGeHi4joUvGm8qmcwhO-r_CGHVjbD60Kc_EmQXuzX9eia4kmLGK4iNK32dzgc5Sb6tezbrM8TRasQW7dQAUNBqtYKMt7sg4JwPVl3OPiZ2zZDwlYv-XbLKEyTsXLnRFQQRvCZfo6Gjs7nsnQZbAzpiYABLGt12Nn2iSmFi_wnNju_2qJ5XHYy1cY3tBU2JZ5BQ01V5S8f6-9PWIYJ4Rmk\",\"refresh_token\":\"def50200382cffef3c49db975d314d456c71c8202a12a6c8b29c81e3d8fcb96cd201faf618737bc54b06a832a9ab7b164b525bd61d906e1a5cbdf88bbf01a20ad20b22f16d6ee4f77befaedfd682350dbc36917b6cede097105edce3d8ec911cb9c0172d8c6d53e6e179205d086cdcf46cb380b2133afff0a19a788b1eaf1004193ea88d1abf146ef4c81e672282afda737653a3269154f59adf018df31308e3047f1cafd15c5fdd103e963316d4e44d61b4b061b97fbfa4a9842932aaedc38f1a70268ec4d92f15b9b19a44bd26c36f3939d3226aa80d8f7bc744b39d239d75709984e19bc16e4589505f945fa7e502890abfd3c6e553d8762b7262b69a81ac30b83aa603a7ed74c61969eb3387387714e0d2157c34a3844dc1a646b742df6f7501567c4d0dc4691a3f6eba0e1de6fa8df6de560fe4974d8cf6608b1abcf3952c5a3c4dde6de71f87fd4a33cec83423a2821b60625dbb1be7f7cbc9fc526ea2533a541077c73c1b4ecca18fde3e2a9e935f75bc00e54a364b182b9b40bce66be9ebc862602044680d957d982add7efbb91540dda08345519336abf0406b0a\"}"
+				},
+				{
+					"id": "e63c6872-a163-40f4-afaf-307d9d494ebd",
+					"name": "401: Invalid Client Secret",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "abc12",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "363RsMbXx=jBK)",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://contenta.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 16:49:31 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Basic realm=\"OAuth\"",
+							"name": "WWW-Authenticate",
+							"description": "Indicates the authentication scheme that should be used to access the requested entity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\":\"invalid_client\",\"message\":\"Client authentication failed\"}"
+				},
+				{
+					"id": "5b1653b2-6100-452d-9c91-8b6c5524c393",
+					"name": "401: Invalid Client UUID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0bc",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "abc123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "363RsMbXx=jBK)",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://contenta.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 16:51:27 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Basic realm=\"OAuth\"",
+							"name": "WWW-Authenticate",
+							"description": "Indicates the authentication scheme that should be used to access the requested entity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\":\"invalid_client\",\"message\":\"Client authentication failed\"}"
+				},
+				{
+					"id": "1e486211-0cb7-467b-8661-86f3387f432b",
+					"name": "401: Invalid Credentials",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "abc123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://contenta.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 16:47:48 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\":\"invalid_credentials\",\"message\":\"The user credentials were incorrect.\"}"
+				}
+			]
+		},
+		{
+			"name": "Oauth Refresh Token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "gYiKPzr=29VQ^4",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "def502006bccd633d8f46f94506c552b7b38bbbf494a6b9eefa95aa9fac9b42785599f8f96a63ba0468d7973f98202883869dfcf46da42e162ca4273728b6a83a8d499f5acdb2e64d2048ce21d95446de1ad2ce9f874213a5ac60fbe2f57657be5dbd48da7fab810307765ea692eadc275a3d51e73ea89b490f166b8f6dcb47d8029f744106df82ca44ca5e320a9e338350a421616c9976e70ab7c44db1c91329e3e41ef918102d016e64a613f42507d99a2453a577239326c2af7a6b14839680fb21bb5e6dec585ccac5d8214c020da5f496926ea8064f8fd821c36f428616e1842edcb6887b26ba262d0f99f7b768648751e875f9b1b636287b4c55b6fff260b7291936fbfae4c0345a9faa99796fd779837ed67a8c4b642d5120b37f933af35e3067e776505cdffa7d59436935b10edc5eabf4e496422b6ac069666f5cf7a3652e95bd7cd8cb7b69aa71d7f67d2f24cd081ca3553abf6ed9542a453afe072069abbc03053fbfdcb10e333cb172530b00f78973b61a962d1ada85db7e964a79962337fa45b802f73f7853b92f680ef0574eeb4ea6baa8445aab51f926e7289766bc9b8b07cef271af011af742e416f260582fd691a2d",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://contenta.test/oauth/token",
+					"protocol": "http",
+					"host": [
+						"contenta",
+						"test"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "15d9e4aa-72e7-4846-a791-8d1883b57ce4",
+					"name": "401: Expired Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "gYiKPzr=29VQ^4",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "def50200bd9035afbc3489db7abcaae0f0c31fe9606a673bdb3dbb62fc3f88b8e0a43f45f0bbea82fd61c243ec244f0cd935858b98cb1feb353ad2e7af91a29a5477cd839025c206e53840894e406477cc22690ba2934e4066c1669259c7ab20af39591f321efb6863c30f389d1e260219371ba9cad5a91dad29999eebcf72fcce9b01cd1def0cc7aa82c67d9125a8413ab9a5296675859084c9bf9a4d82f60d61e0cd67de44a539449d87da6a286ea8fcea1d5bae519c876a7c10b81e29b7170cc938905fb8858f65ffe095d2092009f542d6ace22a8c6b98953089fdfc4babde63b0b3eb8b02ef456e095c5e985a8403770c4f75d58b8afe8914f4b46062fd0f527b8245b2f134db2c80981ca7e1b3a581be56d8f72d80a876e8e769f2d9c6e7865893c4ab2bcd1d528f936dacf2b97edc1aeedf0cb152c7e0f9da5fd44ebcadf68b70324792f0c41ab7b8add815bc9f2c3b0a435e332d3b5e1eb79ebc0f9aa3229fcedf6d8bce0e4ee89e0718e462fe82646b473d31d6d78d37eeae7933452064807ddb96a3304da6062a2c586976fa676ec0275befe5d50e43ca273f1a",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://contenta.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 17:15:46 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"error\":\"invalid_request\",\"message\":\"The refresh token is invalid.\",\"hint\":\"Token has expired\"}"
+				},
+				{
+					"id": "1b0b1849-3b46-45f9-8037-a7b0631ad0e7",
+					"name": "200: OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8be46df2-4cf7-48f8-ba70-6280ea62a0be",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "gYiKPzr=29VQ^4",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "def50200382cffef3c49db975d314d456c71c8202a12a6c8b29c81e3d8fcb96cd201faf618737bc54b06a832a9ab7b164b525bd61d906e1a5cbdf88bbf01a20ad20b22f16d6ee4f77befaedfd682350dbc36917b6cede097105edce3d8ec911cb9c0172d8c6d53e6e179205d086cdcf46cb380b2133afff0a19a788b1eaf1004193ea88d1abf146ef4c81e672282afda737653a3269154f59adf018df31308e3047f1cafd15c5fdd103e963316d4e44d61b4b061b97fbfa4a9842932aaedc38f1a70268ec4d92f15b9b19a44bd26c36f3939d3226aa80d8f7bc744b39d239d75709984e19bc16e4589505f945fa7e502890abfd3c6e553d8762b7262b69a81ac30b83aa603a7ed74c61969eb3387387714e0d2157c34a3844dc1a646b742df6f7501567c4d0dc4691a3f6eba0e1de6fa8df6de560fe4974d8cf6608b1abcf3952c5a3c4dde6de71f87fd4a33cec83423a2821b60625dbb1be7f7cbc9fc526ea2533a541077c73c1b4ecca18fde3e2a9e935f75bc00e54a364b182b9b40bce66be9ebc862602044680d957d982add7efbb91540dda08345519336abf0406b0a",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://contenta.test/oauth/token",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 17:17:06 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache",
+							"name": "pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [],
+					"body": "{\"token_type\":\"Bearer\",\"expires_in\":300,\"access_token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImEzNTlmZjM1NTc3ZTY0MDRjYWE5ZDg5OTMwYmVmZjg5OGIyMTUzMjk5OGNhZjczZDQzYjBmZjkxZGE3NzI0NjUxN2U4NjllNDkwZmI2ZWI5In0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiJhMzU5ZmYzNTU3N2U2NDA0Y2FhOWQ4OTkzMGJlZmY4OThiMjE1MzI5OThjYWY3M2Q0M2IwZmY5MWRhNzcyNDY1MTdlODY5ZTQ5MGZiNmViOSIsImlhdCI6MTUyMzIwNzgyNiwibmJmIjoxNTIzMjA3ODI2LCJleHAiOjE1MjMyMDgxMjYsInN1YiI6IjEiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.GpEJo-8oDxnZeFHKqLqq5pxUFETTBVFCVFTPHZXdgJud5kCEdQ-4raT3Ql8poVvzPVvgdox-4OiL_APXP19yyU1BvakyBOm7wU1AqszIDfTia1QmvPOj5ITj1EvxvOyblfXQspJ3NRqqCHPqq_J3lXHiuvxK_i_mIVb1wugBaf6IIu0e3jml2Fkqlky3JdAxOdK5oRPZZmEcqPs3_6RjcoaAMbUeKaaweSi6SLT--38zz2_6cYDR-Z4N1OfANFIvgbBQZtCHw1I9pfKWDcD8ggK0m0KxcpM2NtLxp-g7TbbxoAYgi5psSat1VKE_C3FswepjBd68WXmjmnAK9PlAw448v54YOwMxd6En7ZhYR08YAxbLhwx9OAPB3RwW8ahu7HyPi4d84mhODcsugDM9tgcf8bPvnnLPH3WAFbW1-ZZaOIdF-nzqUJKx8i6VILtm4I3Th5tDrGgbEF_rI-ugWkZKQwswOck6jaPkIOdwaX-rAsd7-Ved3Mhw6o3WpV_eL9CDyOV5QKwO8CLrLDEeOHCWJZcx0rh2Fu3drY4pHfMYusNHPLQ1YFvvGhLaiGN5rSoEWdcGSmR7DR26PxUjybYterM6E8T5lKGWxU_qQSAArxVoinFBeTPevWbHDupa-iOzbXGgeQT-sWM5cGFDe5hdQkXYFX8S3q9kTcyj5Fk\",\"refresh_token\":\"def50200a65de071d4bc41da8fd18fabeed783dfd4be3125a690fa15c4599a3db559fcc6377279f9cb61c14d8c8470b786ffba562298304f4670fe26299854335355ea421ee00ab4881eaae2b000f2db583b725fb8ab9ec91464df0d74b689e9f4846a29f0c5a233dfe496fe032dd3c841a4dbd8401223f343ff1d4e610c78c1547a95642c31c6a61d7d93a1c233aabd2d0d525777ac6581ba31ce907205d699a062da9ccd7317d61f4b2dbb46e195a2eb47d810f7e9f1665358582a930bcd5a90d0130128a700b03129c4ce204b9ed3aaeeb61738be6ffe599f295745ec087203f4348c709b778f00df49e0df5e478c5c607d4186aa973584e880cc18fb63eccc9612cd25c34f4700019d9b5d692eacc240cefb497b32c919760a399f27808a7d238084241a55c37c63dc19ad7cba2b4e7ccdfa2f975dae0a65f566afbeaba49183de6d4f423fcf9831b8731fca400311c04a5f447239f241b02ca0cbb89724fad43c14467c3d652dbe57acb264abfc381ec3c5225e13b2201826c62c0e4641c2b651e94c26a8b9ed694eaddced3f927487ea238169fdabeda524b4bc5877\"}"
+				}
+			]
+		},
+		{
+			"name": "Recipes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY3ZTc1NTAzODQ4OThiOTc1MmNlNWI5ZGI0NjA5Njc1ZjI3OTI5YTNlN2FhNjMzYTVlYmM3YzA0NDEwZjAwM2M3ZmEzMGJjNjdlYmMxZmQ3In0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiI2N2U3NTUwMzg0ODk4Yjk3NTJjZTViOWRiNDYwOTY3NWYyNzkyOWEzZTdhYTYzM2E1ZWJjN2MwNDQxMGYwMDNjN2ZhMzBiYzY3ZWJjMWZkNyIsImlhdCI6MTUyMzIwOTg5NywibmJmIjoxNTIzMjA5ODk3LCJleHAiOjE1MjMyMTAxOTcsInN1YiI6IjEiLCJzY29wZXMiOlsiY29udGVudF9hZG1pbmlzdHJhdG9yIiwiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.SzLzKB2Rfd07XzzMoqDKSjY2t3vuOD-tuvKPzUB8BA7wFMk-Ilxn2Ma8zeBmYAhVvHd5yJWX98-iqdF_l230Za7Ob3uIbkknK0XSO3n0Yde9XPW93X6ygrvJpyQvK3OXS5VgGvFXwMhs-EB6sUtZqup9MUnBOYOY_r9ZjsXXdJ1swck4qKIG0ZhMX-R_DNA2rYA5fFSGLtbDf-I-K4Lc311Ln8Q66aCv8nMJLJUOBTgKSeN-lc3zaAznA7dpYVrZztkokul3KCmIuEU9lQztWNvYRRM9Zvni5PHbn7BcWfh3PuNo1qDJC755h7I8u8JhX6SSnsFtR-dz1HpMQ37OWSd6GRf2y-jRCAf2j-0pFY1plhGE0kIxeXgWWIz6oADFsNSKkTgiRUo66sFOy3UWVnOMheUBPoMxLWRWnaL5rrsRBzJNank3VKP3OkHu_T5q3O9cL1PvyF3JrgVOlU7kd2W2FhRfUDzayPb5Fn_6QISkn5b7FIw0gdmSNmXjHBFGQw07lujkYWkPzPn-jh14Hw3jMGW4fM9CosohZJYEwctQM2BNfVcRgIzZo7caoBogS5yDzt_8UiIkn0VWml_9Oj44XGNJaH6xDi5dEgZENYrKzjMXkCEdF0NwIHn187W3RT4iF7RaRS6UcsiOQa33vF7Aps_4UJsAEx6F7-5NWLI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": {\n        \"type\": \"recipes\",\n        \"id\": \"26a3da82-b56c-4fbd-b56e-1f87bcfa5700\",\n        \"attributes\": {\n            \"isPublished\": true,\n            \"title\": \"Grilled Cheese\",\n            \"difficulty\": \"easy\",\n            \"ingredients\": [\n                \"2 slices bread\",\n                \"2 slices mild cheddar\",\n                \"1/2 tbls butter\"\n            ],\n            \"numberOfServices\": 1,\n            \"preparationTime\": 5,\n            \"instructions\": \"Seriously? It's in the name of the recipe!\",\n            \"totalTime\": 10\n        },\n        \"relationships\": {\n            \"category\": {\n                \"data\": {\n                    \"type\": \"categories\",\n                    \"id\": \"3968f530-b869-4bbd-8873-80e2ba1f57ae\"\n                }\n            },\n            \"tags\": {\n                \"data\": [\n                    {\n                        \"type\": \"tags\",\n                        \"id\": \"c9b305bd-4604-4cfc-8381-5990dc63a9f0\"\n                    }\n                ]\n            }\n        }\n    }\n}"
+				},
+				"url": {
+					"raw": "http://contenta.test/api/recipes",
+					"protocol": "http",
+					"host": [
+						"contenta",
+						"test"
+					],
+					"path": [
+						"api",
+						"recipes"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "9bcc87f1-c954-4392-a145-f12e3a211144",
+					"name": "403: Invalid Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"disabled": false
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"disabled": false
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer fyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ4MGVjZDMxN2I2OWY4N2Q2NGE4ODkxYTk4YTQwZTcxMTgxZDYxYjZjODg4MmIxM2EyOWJhYjA0NjI1NmE4MTNmNzE3MDJjZDVlMzBkNjdjIn0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiI0ODBlY2QzMTdiNjlmODdkNjRhODg5MWE5OGE0MGU3MTE4MWQ2MWI2Yzg4ODJiMTNhMjliYWIwNDYyNTZhODEzZjcxNzAyY2Q1ZTMwZDY3YyIsImlhdCI6MTUyMzIwOTMwMywibmJmIjoxNTIzMjA5MzAzLCJleHAiOjE1MjMyMDk2MDMsInN1YiI6IjEiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.uCKCHwPE_T_iN-PfMI7NXBWA-BFl5B4GdqtMf60K8wHR929sov3dCnYO1k72GKcFz3bdpXmUuYERid2u5h6B2v-8kbzskfe_SGMX2hwug_ff0SWihfj0gTXeYEVrr6NyJnyMqtU73L20-2I6E98c6ZK6Yl3qEohOs8QIyiCuZHyGXibS_BtDzop2WaVMg20CeArPVoCrdfZxTgRtyo8Z1aX1GAuz499B8tKrhWOkn3TwGEudAubxLGWO39S3VV6oAnAsSXbyhO2ZB_qxCeEoH27FZnK1rhH9ZfSNQE7WgJ5nuIEf0Tu02UmVCSXUVln9iQO2xW-iDtLk2avgD_NUzWJL5xiWAuhuXGK1ApceBmVgTuuX2IQWjVziOXVK3w3XzX3M0gS0AI9H_bytTlcuNXArDJRWjMwCBNZG1AWvfWP30tWQ1Oyq7ww_kmK_LMQiaBpIqBt7ed1c93dj1m5UNFyxp_CNa6e42VxJF-X4_s2-HQiNpQWhL7WoJ7ovO4KyPv2fIDm1rKqRkinRUj7TEMo6fUL6g-QrrGpPJ-DZgF5JgOQQtWEfzoK8akVj0yZzLn1FtGdsKJJD3UvuEh7MjD3CMc5rOhI5gKXK0sdqMrBqq5UDmuf01AZ1Q7sXhCMSkht1rC6_bp39YJLuMtwOoCx-RAbCkPv8sijh5Jb3JSs",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"type\": \"recipes\",\n        \"id\": \"26a3da82-b56c-4fbd-b56e-1f87bcfa5702\",\n        \"attributes\": {\n            \"isPublished\": true,\n            \"title\": \"Grilled Cheese\",\n            \"difficulty\": \"easy\",\n            \"ingredients\": [\n                \"2 slices bread\",\n                \"2 slices mild cheddar\",\n                \"1/2 tbls butter\"\n            ],\n            \"numberOfServices\": 1,\n            \"preparationTime\": 5,\n            \"instructions\": \"Seriously? It's in the name of the recipe!\",\n            \"totalTime\": 10\n        },\n        \"relationships\": {\n            \"category\": {\n                \"data\": {\n                    \"type\": \"categories\",\n                    \"id\": \"3968f530-b869-4bbd-8873-80e2ba1f57ae\"\n                }\n            },\n            \"tags\": {\n                \"data\": [\n                    {\n                        \"type\": \"tags\",\n                        \"id\": \"c9b305bd-4604-4cfc-8381-5990dc63a9f0\"\n                    }\n                ]\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://contenta.test/api/recipes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/vnd.api+json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 17:46:32 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"errors\":[{\"title\":\"Forbidden\",\"status\":403,\"detail\":\"The current user is not allowed to POST the selected resource.\",\"links\":{\"info\":\"http:\\/\\/www.w3.org\\/Protocols\\/rfc2616\\/rfc2616-sec10.html#sec10.4.4\"},\"code\":0,\"source\":{\"pointer\":\"\\/data\"}}]}"
+				},
+				{
+					"id": "21809ab4-574e-4c09-a211-6adbefe9bbb5",
+					"name": "201: Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"disabled": false
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"disabled": false
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ4MGVjZDMxN2I2OWY4N2Q2NGE4ODkxYTk4YTQwZTcxMTgxZDYxYjZjODg4MmIxM2EyOWJhYjA0NjI1NmE4MTNmNzE3MDJjZDVlMzBkNjdjIn0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiI0ODBlY2QzMTdiNjlmODdkNjRhODg5MWE5OGE0MGU3MTE4MWQ2MWI2Yzg4ODJiMTNhMjliYWIwNDYyNTZhODEzZjcxNzAyY2Q1ZTMwZDY3YyIsImlhdCI6MTUyMzIwOTMwMywibmJmIjoxNTIzMjA5MzAzLCJleHAiOjE1MjMyMDk2MDMsInN1YiI6IjEiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.uCKCHwPE_T_iN-PfMI7NXBWA-BFl5B4GdqtMf60K8wHR929sov3dCnYO1k72GKcFz3bdpXmUuYERid2u5h6B2v-8kbzskfe_SGMX2hwug_ff0SWihfj0gTXeYEVrr6NyJnyMqtU73L20-2I6E98c6ZK6Yl3qEohOs8QIyiCuZHyGXibS_BtDzop2WaVMg20CeArPVoCrdfZxTgRtyo8Z1aX1GAuz499B8tKrhWOkn3TwGEudAubxLGWO39S3VV6oAnAsSXbyhO2ZB_qxCeEoH27FZnK1rhH9ZfSNQE7WgJ5nuIEf0Tu02UmVCSXUVln9iQO2xW-iDtLk2avgD_NUzWJL5xiWAuhuXGK1ApceBmVgTuuX2IQWjVziOXVK3w3XzX3M0gS0AI9H_bytTlcuNXArDJRWjMwCBNZG1AWvfWP30tWQ1Oyq7ww_kmK_LMQiaBpIqBt7ed1c93dj1m5UNFyxp_CNa6e42VxJF-X4_s2-HQiNpQWhL7WoJ7ovO4KyPv2fIDm1rKqRkinRUj7TEMo6fUL6g-QrrGpPJ-DZgF5JgOQQtWEfzoK8akVj0yZzLn1FtGdsKJJD3UvuEh7MjD3CMc5rOhI5gKXK0sdqMrBqq5UDmuf01AZ1Q7sXhCMSkht1rC6_bp39YJLuMtwOoCx-RAbCkPv8sijh5Jb3JSs",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"type\": \"recipes\",\n        \"id\": \"26a3da82-b56c-4fbd-b56e-1f87bcfa5702\",\n        \"attributes\": {\n            \"isPublished\": true,\n            \"title\": \"Grilled Cheese\",\n            \"difficulty\": \"easy\",\n            \"ingredients\": [\n                \"2 slices bread\",\n                \"2 slices mild cheddar\",\n                \"1/2 tbls butter\"\n            ],\n            \"numberOfServices\": 1,\n            \"preparationTime\": 5,\n            \"instructions\": \"Seriously? It's in the name of the recipe!\",\n            \"totalTime\": 10\n        },\n        \"relationships\": {\n            \"category\": {\n                \"data\": {\n                    \"type\": \"categories\",\n                    \"id\": \"3968f530-b869-4bbd-8873-80e2ba1f57ae\"\n                }\n            },\n            \"tags\": {\n                \"data\": [\n                    {\n                        \"type\": \"tags\",\n                        \"id\": \"c9b305bd-4604-4cfc-8381-5990dc63a9f0\"\n                    }\n                ]\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://contenta.test/api/recipes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/vnd.api+json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 17:42:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Location",
+							"value": "http://contenta.test/api/recipes/8bab9d87-2c03-41aa-b3f8-e161b480782a",
+							"name": "Location",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"data\":{\"type\":\"recipes\",\"id\":\"8bab9d87-2c03-41aa-b3f8-e161b480782a\",\"attributes\":{\"internalId\":85,\"isPublished\":true,\"title\":\"Grilled Cheese\",\"createdAt\":\"2018-04-08T12:42:43-0500\",\"updatedAt\":\"2018-04-08T12:42:43-0500\",\"isPromoted\":true,\"path\":{\"alias\":null,\"pid\":null,\"langcode\":\"en\"},\"difficulty\":\"easy\",\"ingredients\":[\"2 slices bread\",\"2 slices mild cheddar\",\"1\\/2 tbls butter\"],\"numberOfServices\":1,\"preparationTime\":5,\"instructions\":\"Seriously? It\\u0027s in the name of the recipe!\",\"reviews\":{\"status\":2,\"cid\":0,\"last_comment_timestamp\":0,\"last_comment_name\":null,\"last_comment_uid\":0,\"comment_count\":0},\"totalTime\":10},\"relationships\":{\"contentType\":{\"data\":{\"type\":\"contentTypes\",\"id\":\"a81222e0-5084-479a-ae09-a77d0d58aab5\"},\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\\/8bab9d87-2c03-41aa-b3f8-e161b480782a\\/relationships\\/contentType\"}},\"owner\":{\"data\":{\"type\":\"users\",\"id\":\"7b6d17a0-f6ea-4fd2-839c-3167848cd759\"},\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\\/8bab9d87-2c03-41aa-b3f8-e161b480782a\\/relationships\\/owner\"}},\"category\":{\"data\":null,\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\\/8bab9d87-2c03-41aa-b3f8-e161b480782a\\/relationships\\/category\"}},\"image\":{\"data\":null,\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\\/8bab9d87-2c03-41aa-b3f8-e161b480782a\\/relationships\\/image\"}},\"tags\":{\"data\":[],\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\\/8bab9d87-2c03-41aa-b3f8-e161b480782a\\/relationships\\/tags\"}}},\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\\/8bab9d87-2c03-41aa-b3f8-e161b480782a\"}},\"jsonapi\":{\"version\":\"1.0\",\"meta\":{\"links\":{\"self\":\"http:\\/\\/jsonapi.org\\/format\\/1.0\\/\"}}},\"links\":{\"self\":\"http:\\/\\/contenta.test\\/api\\/recipes\"}}"
+				},
+				{
+					"id": "43df0c75-4574-426c-9e65-86a02908588b",
+					"name": "403: No Authorization Header",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"disabled": false
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"disabled": false
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ4MGVjZDMxN2I2OWY4N2Q2NGE4ODkxYTk4YTQwZTcxMTgxZDYxYjZjODg4MmIxM2EyOWJhYjA0NjI1NmE4MTNmNzE3MDJjZDVlMzBkNjdjIn0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiI0ODBlY2QzMTdiNjlmODdkNjRhODg5MWE5OGE0MGU3MTE4MWQ2MWI2Yzg4ODJiMTNhMjliYWIwNDYyNTZhODEzZjcxNzAyY2Q1ZTMwZDY3YyIsImlhdCI6MTUyMzIwOTMwMywibmJmIjoxNTIzMjA5MzAzLCJleHAiOjE1MjMyMDk2MDMsInN1YiI6IjEiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.uCKCHwPE_T_iN-PfMI7NXBWA-BFl5B4GdqtMf60K8wHR929sov3dCnYO1k72GKcFz3bdpXmUuYERid2u5h6B2v-8kbzskfe_SGMX2hwug_ff0SWihfj0gTXeYEVrr6NyJnyMqtU73L20-2I6E98c6ZK6Yl3qEohOs8QIyiCuZHyGXibS_BtDzop2WaVMg20CeArPVoCrdfZxTgRtyo8Z1aX1GAuz499B8tKrhWOkn3TwGEudAubxLGWO39S3VV6oAnAsSXbyhO2ZB_qxCeEoH27FZnK1rhH9ZfSNQE7WgJ5nuIEf0Tu02UmVCSXUVln9iQO2xW-iDtLk2avgD_NUzWJL5xiWAuhuXGK1ApceBmVgTuuX2IQWjVziOXVK3w3XzX3M0gS0AI9H_bytTlcuNXArDJRWjMwCBNZG1AWvfWP30tWQ1Oyq7ww_kmK_LMQiaBpIqBt7ed1c93dj1m5UNFyxp_CNa6e42VxJF-X4_s2-HQiNpQWhL7WoJ7ovO4KyPv2fIDm1rKqRkinRUj7TEMo6fUL6g-QrrGpPJ-DZgF5JgOQQtWEfzoK8akVj0yZzLn1FtGdsKJJD3UvuEh7MjD3CMc5rOhI5gKXK0sdqMrBqq5UDmuf01AZ1Q7sXhCMSkht1rC6_bp39YJLuMtwOoCx-RAbCkPv8sijh5Jb3JSs",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"type\": \"recipes\",\n        \"id\": \"26a3da82-b56c-4fbd-b56e-1f87bcfa5702\",\n        \"attributes\": {\n            \"isPublished\": true,\n            \"title\": \"Grilled Cheese\",\n            \"difficulty\": \"easy\",\n            \"ingredients\": [\n                \"2 slices bread\",\n                \"2 slices mild cheddar\",\n                \"1/2 tbls butter\"\n            ],\n            \"numberOfServices\": 1,\n            \"preparationTime\": 5,\n            \"instructions\": \"Seriously? It's in the name of the recipe!\",\n            \"totalTime\": 10\n        },\n        \"relationships\": {\n            \"category\": {\n                \"data\": {\n                    \"type\": \"categories\",\n                    \"id\": \"3968f530-b869-4bbd-8873-80e2ba1f57ae\"\n                }\n            },\n            \"tags\": {\n                \"data\": [\n                    {\n                        \"type\": \"tags\",\n                        \"id\": \"c9b305bd-4604-4cfc-8381-5990dc63a9f0\"\n                    }\n                ]\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://contenta.test/api/recipes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/vnd.api+json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 17:45:46 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"errors\":[{\"title\":\"Forbidden\",\"status\":403,\"detail\":\"The current user is not allowed to POST the selected resource.\",\"links\":{\"info\":\"http:\\/\\/www.w3.org\\/Protocols\\/rfc2616\\/rfc2616-sec10.html#sec10.4.4\"},\"code\":0,\"source\":{\"pointer\":\"\\/data\"}}]}"
+				},
+				{
+					"id": "42f81df0-3b24-4f30-9de6-a9119f568fe6",
+					"name": "403: No Scope",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjQ4MGVjZDMxN2I2OWY4N2Q2NGE4ODkxYTk4YTQwZTcxMTgxZDYxYjZjODg4MmIxM2EyOWJhYjA0NjI1NmE4MTNmNzE3MDJjZDVlMzBkNjdjIn0.eyJhdWQiOiI4YmU0NmRmMi00Y2Y3LTQ4ZjgtYmE3MC02MjgwZWE2MmEwYmUiLCJqdGkiOiI0ODBlY2QzMTdiNjlmODdkNjRhODg5MWE5OGE0MGU3MTE4MWQ2MWI2Yzg4ODJiMTNhMjliYWIwNDYyNTZhODEzZjcxNzAyY2Q1ZTMwZDY3YyIsImlhdCI6MTUyMzIwOTMwMywibmJmIjoxNTIzMjA5MzAzLCJleHAiOjE1MjMyMDk2MDMsInN1YiI6IjEiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsInBvc3RtYW4iXX0.uCKCHwPE_T_iN-PfMI7NXBWA-BFl5B4GdqtMf60K8wHR929sov3dCnYO1k72GKcFz3bdpXmUuYERid2u5h6B2v-8kbzskfe_SGMX2hwug_ff0SWihfj0gTXeYEVrr6NyJnyMqtU73L20-2I6E98c6ZK6Yl3qEohOs8QIyiCuZHyGXibS_BtDzop2WaVMg20CeArPVoCrdfZxTgRtyo8Z1aX1GAuz499B8tKrhWOkn3TwGEudAubxLGWO39S3VV6oAnAsSXbyhO2ZB_qxCeEoH27FZnK1rhH9ZfSNQE7WgJ5nuIEf0Tu02UmVCSXUVln9iQO2xW-iDtLk2avgD_NUzWJL5xiWAuhuXGK1ApceBmVgTuuX2IQWjVziOXVK3w3XzX3M0gS0AI9H_bytTlcuNXArDJRWjMwCBNZG1AWvfWP30tWQ1Oyq7ww_kmK_LMQiaBpIqBt7ed1c93dj1m5UNFyxp_CNa6e42VxJF-X4_s2-HQiNpQWhL7WoJ7ovO4KyPv2fIDm1rKqRkinRUj7TEMo6fUL6g-QrrGpPJ-DZgF5JgOQQtWEfzoK8akVj0yZzLn1FtGdsKJJD3UvuEh7MjD3CMc5rOhI5gKXK0sdqMrBqq5UDmuf01AZ1Q7sXhCMSkht1rC6_bp39YJLuMtwOoCx-RAbCkPv8sijh5Jb3JSs"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": {\n        \"type\": \"recipes\",\n        \"id\": \"26a3da82-b56c-4fbd-b56e-1f87bcfa5701\",\n        \"attributes\": {\n            \"isPublished\": true,\n            \"title\": \"Grilled Cheese\",\n            \"difficulty\": \"easy\",\n            \"ingredients\": [\n                \"2 slices bread\",\n                \"2 slices mild cheddar\",\n                \"1/2 tbls butter\"\n            ],\n            \"numberOfServices\": 1,\n            \"preparationTime\": 5,\n            \"instructions\": \"Seriously? It's in the name of the recipe!\",\n            \"totalTime\": 10\n        },\n        \"relationships\": {\n            \"category\": {\n                \"data\": {\n                    \"type\": \"categories\",\n                    \"id\": \"3968f530-b869-4bbd-8873-80e2ba1f57ae\"\n                }\n            },\n            \"tags\": {\n                \"data\": [\n                    {\n                        \"type\": \"tags\",\n                        \"id\": \"c9b305bd-4604-4cfc-8381-5990dc63a9f0\"\n                    }\n                ]\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://contenta.test/api/recipes",
+							"protocol": "http",
+							"host": [
+								"contenta",
+								"test"
+							],
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "must-revalidate, no-cache, private",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/vnd.api+json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Content-language",
+							"value": "en",
+							"name": "Content-language",
+							"description": "The language the content is in"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Apr 2018 17:49:39 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "Sun, 19 Nov 1978 05:00:00 GMT",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100",
+							"name": "Keep-Alive",
+							"description": "Custom header"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.18 (Ubuntu)",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-Generator",
+							"value": "Drupal 8 (https://www.drupal.org)",
+							"name": "X-Generator",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.12-3+ubuntu16.04.1+deb.sury.org+1",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=edge",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"errors\":[{\"title\":\"Forbidden\",\"status\":403,\"detail\":\"The current user is not allowed to POST the selected resource.\",\"links\":{\"info\":\"http:\\/\\/www.w3.org\\/Protocols\\/rfc2616\\/rfc2616-sec10.html#sec10.4.4\"},\"code\":0,\"source\":{\"pointer\":\"\\/data\"}}]}"
+				}
+			]
+		}
+	]
+}
