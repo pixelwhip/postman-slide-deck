@@ -6,34 +6,47 @@ Reliable API's with Postman
 ## Aten
 ## Postman
 ## Contenta
-# Usage
+## JSON API
+
+# Usage - *DEMO*
 ## Make an API call (GET)
 ## Url Params (GET) :uuid
 ## Query Params
 ### Filters
 ### Sort
+### Sparse Fieldsets
 ## Headers
-### Accept: application/json+api
-## Authentication
+### Accept: application/vnd.api+json
+
+## Authentication - *DEMO*
 ### Simple Auth
 ### OAuth
+
 ## Collections
 ### Folders
-## Environments
+
 # Variables
-## Example (Domain)
+## Environments
 ## Scopes
 ### Global (Workspace)
 ### Collection
 ### Environment
 ### Local (Script)
 ### Data (File per run)
-# Workspaces
-# Scripts
+
+# Scripts - *DEMO*
 ## Postman Sandbox
 ### Node
 ## Pre-request
 ## Tests
-# Collection Runner
+
+# Collection Runner - *DEMO*
 ## Iterations & Data Variables
+
 # Newman
+
+# Migration
+# Import Swagger
+# Documentation
+# Examples
+# Monitors

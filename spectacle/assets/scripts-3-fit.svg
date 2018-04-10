@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 809.3 745" style="enable-background:new 0 0 809.3 745;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{font-family:'Roboto-MediumItalic';}
+	.st2{font-size:34.3004px;}
+	.st3{font-family:'Roboto-Black';}
+	.st4{opacity:0.9;}
+	.st5{opacity:0.8;}
+	.st6{opacity:0.7;}
+	.st7{opacity:0.6;}
+	.st8{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;}
+	.st10{fill:#534741;}
+</style>
+<text transform="matrix(1 0 0 1 385.3867 54.0237)"><tspan x="0" y="0" class="st0 st1 st2">per</tspan><tspan x="48.8" y="0" class="st0 st3 st2"> Collection Run Iteration</tspan></text>
+<text transform="matrix(1 0 0 1 385.6372 218.0237)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">per</tspan><tspan x="48.8" y="0" class="st0 st3 st2"> Script</tspan></text>
+<text transform="matrix(1 0 0 1 385.3364 383.0237)" class="st5"><tspan x="0" y="0" class="st0 st1 st2">per</tspan><tspan x="48.8" y="0" class="st0 st3 st2"> Environment</tspan></text>
+<text transform="matrix(1 0 0 1 385.6372 553.0237)" class="st6"><tspan x="0" y="0" class="st0 st1 st2">per</tspan><tspan x="48.8" y="0" class="st0 st3 st2"> Collection</tspan></text>
+<text transform="matrix(1 0 0 1 385.3779 711.0237)" class="st7"><tspan x="0" y="0" class="st0 st1 st2">per</tspan><tspan x="48.8" y="0" class="st0 st3 st2"> Workspace</tspan></text>
+<g>
+	<polygon class="st0" points="175,116.9 158,116.9 166.5,108.4 	"/>
+	<line class="st8" x1="166" y1="143.9" x2="166" y2="112.9"/>
+</g>
+<g>
+	<polygon class="st0" points="175,281.1 158,281.1 166.5,272.6 	"/>
+	<line class="st8" x1="166" y1="308.1" x2="166" y2="277.1"/>
+</g>
+<g>
+	<polygon class="st0" points="175,445.4 158,445.4 166.5,436.9 	"/>
+	<line class="st8" x1="166" y1="472.4" x2="166" y2="441.4"/>
+</g>
+<g>
+	<polygon class="st0" points="175,609.6 158,609.6 166.5,601.1 	"/>
+	<line class="st8" x1="166" y1="636.6" x2="166" y2="605.6"/>
+</g>
+<g class="st7">
+	<g>
+		<rect x="3" y="660" class="st9" width="327" height="82"/>
+		<path class="st10" d="M327,663v76H6v-76H327 M333,657H0v88h333V657L333,657z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 116.7969 711.0237)" class="st0 st3 st2">Global</text>
+</g>
+<g class="st4">
+	<g>
+		<path class="st10" d="M327,170.2v76H6v-76H327 M333,164.2H0v88h333V164.2L333,164.2z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 124.6519 218.2737)" class="st0 st3 st2">Local</text>
+</g>
+<g>
+	<g>
+		<path class="st10" d="M327,6v76H6V6H327 M333,0H0v88h333V0L333,0z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 131.125 54.0237)" class="st0 st3 st2">Data</text>
+</g>
+<g class="st5">
+	<g>
+		<path class="st10" d="M327,334.5v76H6v-76H327 M333,328.5H0v88h333V328.5L333,328.5z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 67.9927 382.5237)" class="st0 st3 st2">Environment</text>
+</g>
+<g class="st6">
+	<g>
+		<path class="st10" d="M327,498.8v76H6v-76H327 M333,492.8H0v88h333V492.8L333,492.8z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 87.8394 546.7737)" class="st0 st3 st2">Collection</text>
+</g>
+</svg>

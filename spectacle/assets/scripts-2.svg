@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1200" style="enable-background:new 0 0 1920 1200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#534741;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Roboto-Black';}
+	.st3{font-size:34.3004px;}
+	.st4{font-family:'Roboto-Medium';}
+	.st5{opacity:0.8;}
+	.st6{opacity:0.6;}
+	.st7{fill:#333333;}
+	.st8{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<rect x="1426" y="231.8" class="st0" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1503.8882 308.4436)"><tspan x="0" y="0" class="st1 st2 st3">Collection </tspan><tspan x="44.3" y="41.2" class="st1 st4 st3">Test</tspan></text>
+</g>
+<g class="st5">
+	<g>
+		<rect x="1426" y="513.3" class="st0" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1533.147 589.9436)"><tspan x="0" y="0" class="st1 st2 st3">Folder </tspan><tspan x="15" y="41.2" class="st1 st4 st3">Test</tspan></text>
+</g>
+<g class="st6">
+	<g>
+		<rect x="1426" y="794.8" class="st0" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1518.5093 871.4436)"><tspan x="0" y="0" class="st1 st2 st3">Request </tspan><tspan x="29.7" y="41.2" class="st1 st4 st3">Test</tspan></text>
+</g>
+<g>
+	<polygon class="st7" points="1573.8,766 1590.8,766 1582.2,774.5 	"/>
+	<line class="st8" x1="1582.8" y1="708" x2="1582.8" y2="770"/>
+</g>
+<g>
+	<polygon class="st7" points="1573.8,484.5 1590.8,484.5 1582.2,493 	"/>
+	<line class="st8" x1="1582.8" y1="426.5" x2="1582.8" y2="488.5"/>
+</g>
+<g>
+	<g>
+		<rect x="168" y="231.8" class="st0" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 245.8882 308.4436)"><tspan x="0" y="0" class="st1 st2 st3">Collection </tspan><tspan x="-11.6" y="41.2" class="st1 st4 st3">Pre-request</tspan></text>
+</g>
+<g class="st5">
+	<g>
+		<rect x="168" y="513.3" class="st0" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 275.147 589.9436)"><tspan x="0" y="0" class="st1 st2 st3">Folder </tspan><tspan x="-40.9" y="41.2" class="st1 st4 st3">Pre-request</tspan></text>
+</g>
+<g class="st6">
+	<g>
+		<rect x="168" y="794.8" class="st0" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 260.5093 871.4436)"><tspan x="0" y="0" class="st1 st2 st3">Request </tspan><tspan x="-26.2" y="41.2" class="st1 st4 st3">Pre-request</tspan></text>
+</g>
+<g>
+	<g>
+		<rect x="588" y="559" class="st1" width="327" height="82"/>
+		<path class="st0" d="M912,562v76H591v-76H912 M918,556H585v88h333V556L918,556z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 687.4767 610.0237)" class="st7 st2 st3">Request</text>
+</g>
+<g>
+	<g>
+		<path class="st0" d="M1329,562v76h-321v-76H1329 M1335,556h-333v88h333V556L1335,556z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1091.8997 610.0237)" class="st7 st2 st3">Response</text>
+</g>
+<g>
+	<polygon class="st7" points="984.8,608.5 984.8,591.5 993.2,600 	"/>
+	<line class="st8" x1="926.8" y1="599.5" x2="988.8" y2="599.5"/>
+</g>
+<g>
+	<polygon class="st7" points="1384,326.5 1384,309.5 1392.5,318 	"/>
+	<path class="st8" d="M1387.8,318c-66,0-231.2,88-231.2,216"/>
+</g>
+<g>
+	<polygon class="st7" points="759.8,670.5 742.8,670.5 751.2,662 	"/>
+	<path class="st8" d="M519.5,882.5c66,0,231.2-88,231.2-216"/>
+</g>
+<g>
+	<polygon class="st7" points="315.8,766 332.8,766 324.2,774.5 	"/>
+	<line class="st8" x1="324.8" y1="708" x2="324.8" y2="770"/>
+</g>
+<g>
+	<polygon class="st7" points="315.8,484.5 332.8,484.5 324.2,493 	"/>
+	<line class="st8" x1="324.8" y1="426.5" x2="324.8" y2="488.5"/>
+</g>
+</svg>

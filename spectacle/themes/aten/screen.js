@@ -27,9 +27,11 @@ const defaultFonts = {
 };
 
 const fs = {
-  h1: '8.5rem',
-  h2: '7.35rem',
-  h3: '5.5rem',
+  h1: '16rem',
+  h2: '8.5rem',
+  h3: '7.35rem',
+  h4: '5.5rem',
+  h5: '3.82rem'
 };
 
 const fw = {
@@ -76,6 +78,9 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       },
       '_:-moz-tree-row(hover), ul .appear': {
         display: 'inline'
+     },
+      'html': {
+        fontSize: "calc((16 / 1920) * 100vw) !important"
       },
       'html, body': {
         width: '100%',
@@ -85,6 +90,64 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       },
       '*': {
         boxSizing: 'border-box',
+      },
+      '.grid': {
+        display: 'grid',
+        gridTemplateColumns: `[left-bleed] ${240 / 1920 * 100}vw [left-margin] 1fr [left-inner-margin] ${120 / 1920 * 100}vw [center] ${120 / 1920 * 100}vw [right-inner-margin] 1fr [right-margin] ${240 / 1920 * 100}vw [right-bleed]`,
+        gridTemplateRows: `[top-bleed] ${78 / 1200 * 100}vh [top-margin] 1fr [bottom-margin] ${140 / 1200 * 100}vh [bottom-bleed]`,
+        padding: 0,
+        height: '100vh',
+        width: '100vw',
+      },
+      '.grid--2-column': {
+        gridTemplateColumns: `[left-bleed] ${120 / 1920 * 100}vw [left-margin] 1fr [left-inner-margin] ${120 / 1920 * 100}vw [center] ${120 / 1920 * 100}vw [right-inner-margin] 1fr [right-margin] ${120 / 1920 * 100}vw [right-bleed]`,
+        gridTemplateRows: `[top-bleed] ${78 / 1200 * 100}vh [top-margin] 1fr [bottom-margin] ${140 / 1200 * 100}vh [bottom-bleed]`,
+      },
+      '.grid--2-column .grid__column:first-child': {
+        gridArea: 'top-bleed / left-bleed / bottom-bleed / center',
+        height: '100vh',
+      },
+      '.grid--2-column .slide-title': {
+        gridArea: 'top-margin / left-margin / bottom-bleed / left-inner-margin',
+      },
+      '.grid--2-column .slide-content': {
+        gridArea: 'top-margin / right-inner-margin / bottom-margin / right-margin',
+        display: 'flex',
+        alignItems: 'center',
+      },
+      '.grid--2-column .grid__column:last-child': {
+        gridArea: 'top-bleed / center / bottom-bleed / right-bleed',
+        height: '100vh',
+      },
+      '.grid__screenshot': {
+        gridArea: 'top-margin / left-margin / bottom-bleed / right-margin',
+      },
+      '.grid__default': {
+        gridArea: 'top-margin / left-margin / bottom-margin / right-margin',
+      },
+      '.grid__cover': {
+        gridArea: 'top-bleed / left-bleed / bottom-bleed / right-bleed',
+        height: '100vh',
+        width: '100vw',
+      },
+      '.center': {
+        alignItems: 'center',
+        justifyContent: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+      },
+      '.left-align': {
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        height: "100%"
+      },
+      '.overlay': {
+        backgroundColor: 'rgba(255, 255, 255, .8)',
+      },
+      '.gold': {
+        backgroundColor: colors.gold,
       }
     },
     fullscreen: {
@@ -130,7 +193,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         outline: 0,
       },
       prevIcon: {
-        fill: colors.quarternary,
+        fill: colors.tertiary,
         transition: 'fill 1s ease-in-out 0.2s',
       },
       next: {
@@ -144,7 +207,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         outline: 0,
       },
       nextIcon: {
-        fill: colors.quarternary,
+        fill: colors.tertiary,
         transition: 'fill 1s ease-in-out 0.2s',
       },
     },
@@ -176,7 +239,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
           borderTopLeftRadius: '10px',
           borderTopRightRadius: '10px',
           transition: 'all 0.3s ease-out',
-          background: colors.quarternary,
+          background: colors.tertiary,
         },
         pacmanBottom: {
           position: 'absolute',
@@ -185,7 +248,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
           height: '10px',
           borderBottomLeftRadius: '10px',
           borderBottomRightRadius: '10px',
-          background: colors.quarternary,
+          background: colors.tertiary,
           transition: 'all 0.3s ease-out',
           top: '10px',
         },
@@ -197,7 +260,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
           height: '10px',
           borderWidth: 2,
           borderStyle: 'solid',
-          borderColor: colors.quarternary,
+          borderColor: colors.tertiary,
           borderRadius: '50%',
           transition: 'all 0.3s ease-out',
         },
@@ -214,7 +277,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         },
         bar: {
           height: '100%',
-          background: colors.quarternary,
+          background: colors.tertiary,
           transition: 'all 0.3s ease-out',
         },
       },
@@ -224,7 +287,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
           bottom: 10,
           right: 10,
           zIndex: 1000,
-          color: colors.quarternary,
+          color: colors.tertiary,
           transition: 'all 0.3s ease-out',
         },
       },
@@ -326,7 +389,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
         },
         h4: {
           color: colors.secondary,
-          fontSize: '3.82rem',
+          fontSize: fs.h4,
           fontFamily: fonts.primary,
           lineHeight: 1,
           fontWeight: fw.black,
@@ -355,6 +418,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       },
       link: {
         textDecoration: 'none',
+        color: colors.secondary,
       },
       listItem: {
         fontSize: '2.66rem',
@@ -379,7 +443,7 @@ const screen = (colorArgs = defaultColors, fontArgs = defaultFonts) => {
       },
       text: {
         color: colors.gray,
-        fontSize: '2.66rem',
+        fontSize: '4rem',
         fontFamily: fonts.primary,
         margin: '0.25rem auto',
       },

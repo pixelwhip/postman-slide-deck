@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1200" style="enable-background:new 0 0 1920 1200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:none;stroke:#333333;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#534741;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'Roboto-Black';}
+	.st5{font-size:34.3004px;}
+	.st6{font-family:'Roboto-Medium';}
+</style>
+<g>
+	<polygon class="st0" points="1401.7,608.5 1401.7,591.5 1410.2,600 	"/>
+	<line class="st1" x1="1343.7" y1="599.5" x2="1405.7" y2="599.5"/>
+</g>
+<g>
+	<g>
+		<rect x="168" y="512.8" class="st2" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 230.4878 589.4436)"><tspan x="0" y="0" class="st3 st4 st5">Pre-request </tspan><tspan x="48.8" y="41.2" class="st3 st6 st5">Script</tspan></text>
+</g>
+<g>
+	<g>
+		<rect x="1419" y="512.8" class="st2" width="333" height="174.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1550.6313 589.4436)"><tspan x="0" y="0" class="st3 st4 st5">Test</tspan><tspan x="-10.3" y="41.2" class="st3 st6 st5">Script</tspan></text>
+</g>
+<g>
+	<g>
+		<rect x="588" y="559" class="st3" width="327" height="82"/>
+		<path class="st2" d="M912,562v76H591v-76H912 M918,556H585v88h333V556L918,556z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 687.4767 610.0237)" class="st0 st4 st5">Request</text>
+</g>
+<g>
+	<g>
+		<path class="st2" d="M1329,562v76h-321v-76H1329 M1335,556h-333v88h333V556L1335,556z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1091.8997 610.0237)" class="st0 st4 st5">Response</text>
+</g>
+<g>
+	<polygon class="st0" points="984.8,608.5 984.8,591.5 993.2,600 	"/>
+	<line class="st1" x1="926.8" y1="599.5" x2="988.8" y2="599.5"/>
+</g>
+<g>
+	<polygon class="st0" points="567.8,608.5 567.8,591.5 576.3,600 	"/>
+	<line class="st1" x1="509.8" y1="599.5" x2="571.8" y2="599.5"/>
+</g>
+</svg>
